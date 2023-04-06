@@ -29,8 +29,13 @@
                     Sözener Farm
                 </a>
             </div>
-            <div id="nav-links">
+            <div id="nav-links" class="responsive">
                 <ul>
+                    <li class="nav-item text-uppercase nav-icon">
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-bars"></i>
+                        </a>
+                    </li> 
                     <li class="nav-item text-uppercase">
                         <a href="#" class="nav-link">
                             Portfolio
@@ -251,10 +256,18 @@
     <div class="copyright">
         <div class="container">
             <small>
-                Copyright@Your Website 
+                Copyright@Your Website 2021
             </small>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" ></script>
+    <script>
+        $(".nav-icon").click(function(){
+    $("#nav-links").toggleClass("responsive")
+    return false;
+});
+
+    </script>
 </body>
 
 </html>
