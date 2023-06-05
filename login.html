@@ -1,132 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
-    <title>Login</title>
-    <style>
-        body {
-  box-sizing: border-box;
-  font-family: Lato, Arial;
-  text-align: center;
-  color: #eee;
-  background-color: #000;
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <title>Login</title>
+  <style>
+    body {
+      box-sizing: border-box;
+      font-family: Lato, Arial;
+      text-align: center;
+      color: #eee;
+      background-color: #000;
 
-}
+    }
 
-h2 {
-  margin-top: 1em;
-  margin-bottom: 1em;
-  color: #eee;
-  font-weight: 400;
-  text-align: center;
-  font-size: 200%;
-  letter-spacing: 4px;
-}
+    h2 {
+      margin-top: 1em;
+      margin-bottom: 1em;
+      color: #eee;
+      font-weight: 400;
+      text-align: center;
+      font-size: 200%;
+      letter-spacing: 4px;
+    }
 
-h4 {
-  margin-top: 1em;
-  color: #eee;
-  font-size: 150%;
-  font-weight: 300;
-  text-align: center;
-}
+    h4 {
+      margin-top: 1em;
+      color: #eee;
+      font-size: 150%;
+      font-weight: 300;
+      text-align: center;
+    }
 
-button {
-  display: inline;
-  background: #01A4E0;
-  color: #2184AC;
-  border: 0;
-  padding: 4px;
-}
+    button {
+      display: inline;
+      background: #01A4E0;
+      color: #2184AC;
+      border: 0;
+      padding: 4px;
+    }
 
-input {
-    display: block;
-    width: 98%;
-  height: 30px; 
-    margin-top: 1.0em;
-   padding: 4px;
-}
+    input {
+      display: block;
+      width: 98%;
+      height: 30px;
+      margin-top: 1.0em;
+      padding: 4px;
+    }
 
-small {
-  display: inline-block;
-  margin-top: 5px;
-  color: white;
-  font-size: 100%;
-  color: #fff;
-}
+    small {
+      display: inline-block;
+      margin-top: 5px;
+      color: white;
+      font-size: 100%;
+      color: #fff;
+    }
 
-.login-box {
-    padding: 1em 1em 1em 1em;
-    margin: auto;
-    text-align: center;
-    display: block;
-    background-color: #6f92dc;
-    width: 60%;
-  height: auto;
-}
+    .login-box {
+      padding: 1em 1em 1em 1em;
+      margin: auto;
+      text-align: center;
+      display: block;
+      background-color: #6f92dc;
+      width: 60%;
+      height: auto;
+    }
 
-.outer-box {
-    display: block;
-    margin: auto;
-    background: #6f92dc;
-    border-radius: 5px;
-    width: 50%;
-    height: 20em;
-  height: auto;
-}
+    .outer-box {
+      display: block;
+      margin: auto;
+      background: #6f92dc;
+      border-radius: 5px;
+      width: 50%;
+      height: 20em;
+      height: auto;
+    }
 
-#btn-login {
-  display: block;
-  width: 100%;
-  height: 40px;
-  margin-top: 2.0em;
-  border-radius: 4px;
-  background-color: #3366cc;
-  color: #fff;
-}
+    #btn-login {
+      display: block;
+      width: 100%;
+      height: 40px;
+      margin-top: 2.0em;
+      border-radius: 4px;
+      background-color: #3366cc;
+      color: #fff;
+    }
 
-#btn-forgot {
-  display: block;
-  width: 100%;
-  margin-top: 1.0em;
-  border-radius: 2px;
-  color: #fff;
-  background-color: #000D36;
-}
-
-    </style>
+    #btn-forgot {
+      display: block;
+      width: 100%;
+      margin-top: 1.0em;
+      border-radius: 2px;
+      color: #fff;
+      background-color: #000D36;
+    }
+  </style>
 </head>
+
 <body>
-    <header>
-   
-        <h1>Sözener Farm</h1>
-        <div class="outer-box">
-            <div class="login-box">
-             
-              
-              <input type="text" placeholder="Kullanıcı Adı" id="email" required>
-              <input type="password" placeholder="Şifre" id="şifre" required>
+  <header>
 
-             
-              <button id="btn-login">Giriş Yap</button>  
+    <h1>Sözener Farm</h1>
+    <div class="outer-box">
+      <div class="login-box">
 
-              <button  id="btn-forgot"><a href="forget-password.html" ></a> Şifremi unuttum!</button>
-              <button id="btn-forgot"><a href="register.html" ></a>Üye olun</button>
-             
-            </div>
-          </div>
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+
+        <input type="text" placeholder="Kullanıcı Adı" id="email" required>
+        <input type="password" placeholder="Şifre" id="psw" required>
+
+
+        <button id="btn-login"> Giriş Yap </button>
+
+
+        <button id="btn-forgot"><a href="forget-password.html"><i class="fa-solid fa-circle-check"> Sifremi unuttum</i></a>!</button>
+        <button id="btn-forgot"><a href="register.html">    <i class="fa-solid fa-circle-check">Üye olun</i></a></button>
+
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
       integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
       crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
       integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
       crossorigin="anonymous"></script>
 </body>
+
 </html>
